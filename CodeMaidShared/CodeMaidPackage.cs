@@ -1,3 +1,11 @@
+﻿using System;
+using System.Diagnostics;
+using System.Globalization;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Threading;
+using System.Windows;
+using System.Windows.Threading;
 using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio;
@@ -11,14 +19,6 @@ using SteveCadwallader.CodeMaid.Properties;
 using SteveCadwallader.CodeMaid.UI;
 using SteveCadwallader.CodeMaid.UI.ToolWindows.BuildProgress;
 using SteveCadwallader.CodeMaid.UI.ToolWindows.Spade;
-using System;
-using System.Diagnostics;
-using System.Globalization;
-using System.IO;
-using System.Runtime.InteropServices;
-using System.Threading;
-using System.Windows;
-using System.Windows.Threading;
 using Task = System.Threading.Tasks.Task;
 using VSColorTheme = Microsoft.VisualStudio.PlatformUI.VSColorTheme;
 

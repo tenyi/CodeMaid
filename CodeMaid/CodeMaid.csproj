@@ -89,6 +89,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="zh-Hant\extension.vsixlangpack" />
     <Resource Include="Integration\Images\IDE\progressToolWindow.png" />
     <Resource Include="Integration\Images\IDE\spadeToolWindow.png" />
     <Resource Include="CodeMaid.ico" />

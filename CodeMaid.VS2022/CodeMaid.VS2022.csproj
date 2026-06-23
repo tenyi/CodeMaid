@@ -101,6 +101,11 @@
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="..\CodeMaid\zh-Hant\extension.vsixlangpack">
+      <Link>zh-Hant\extension.vsixlangpack</Link>
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="source.extension.ico">
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </Resource>
@@ -608,6 +613,11 @@
       <ResourceName>Menus.ctmenu</ResourceName>
       <DependentUpon>CodeMaid.vsct</DependentUpon>
     </VSCTCompile>
+    <VSCTCompile Include="..\CodeMaid\CodeMaid.zh-Hant.vsct">
+      <Link>CodeMaid.zh-Hant.vsct</Link>
+      <ResourceName>Menus.ctmenu</ResourceName>
+      <DependentUpon>CodeMaid.vsct</DependentUpon>
+    </VSCTCompile>
     <VSCTCompile Include="..\CodeMaid\CodeMaid.en-US.vsct">
       <Link>CodeMaid.en-US.vsct</Link>
       <ResourceName>Menus.ctmenu</ResourceName>
@@ -709,6 +719,9 @@
       <LogicalName>VSPackage.en-US.resources</LogicalName>
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="source.extension.zh-Hant.resx">
+      <DependentUpon>source.extension.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="source.extension.resx">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -719,6 +732,11 @@
     <EmbeddedResource Include="source.extension.zh-Hans.resx">
       <MergeWithCTO>true</MergeWithCTO>
       <LogicalName>VSPackage.zh-Hans.resources</LogicalName>
+      <DependentUpon>source.extension.vsixmanifest</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="source.extension.zh-Hant.resx">
+      <MergeWithCTO>true</MergeWithCTO>
+      <LogicalName>VSPackage.zh-Hant.resources</LogicalName>
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
